@@ -59,17 +59,20 @@ void Update()
         }
 
         //シーン移動
-        if (point == 0 && Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            SceneManager.LoadScene("select");
-        }
-        if (point == 1 && Input.GetKeyDown(KeyCode.Space))
-        {
-            SceneManager.LoadScene("option");
-        }
-        if (point == 2 && Input.GetKeyDown(KeyCode.Space))
-        {
-            SceneManager.LoadScene("gallery");
+            if (point == 0 )
+            {
+                SceneManager.LoadScene("select");
+            }
+            else if (point == 1 )
+            {
+                SceneManager.LoadScene("option");
+            }
+            else if (point == 2 )
+            {
+                SceneManager.LoadScene("gallery");
+            }
         }
         // SceneManager.LoadScene("行きたいシーンの名前");
 
