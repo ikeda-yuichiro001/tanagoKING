@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using UnityEngine.SceneManagement;
 public class clickscript : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -19,4 +20,11 @@ public class clickscript : MonoBehaviour
     {
         EditorApplication.Beep();
     }
+    
+        // ボタンが押された場合、今回呼び出される関数
+        public void OnClick()
+        {
+          SceneManager.LoadScene("select");
+        }
+    
 }

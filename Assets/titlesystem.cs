@@ -19,7 +19,7 @@ public class titlesystem : MonoBehaviour
 void Update()
     {
         //わからんからとりあえず変数宣言
-        int point;
+        /*int point;
 
         point = 0;
 
@@ -74,7 +74,7 @@ void Update()
                 SceneManager.LoadScene("gallery");
             }
         }
-        // SceneManager.LoadScene("行きたいシーンの名前");
+        // SceneManager.LoadScene("行きたいシーンの名前");*/
 
     }
 }
