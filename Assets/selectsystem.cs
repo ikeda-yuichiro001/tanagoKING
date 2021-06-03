@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 using UnityEngine.SceneManagement;
 
 public class selectsystem : MonoBehaviour
@@ -9,8 +10,6 @@ public class selectsystem : MonoBehaviour
     void Start()
     {
 
-
-
     }
 
 
@@ -18,101 +17,32 @@ public class selectsystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //わからんからとりあえず変数宣言
-        int point1;
 
-        point1 = 0;
+    }
+    public void ButtonClick()
+    {
+        EditorApplication.Beep();
+    }
 
-
-        //方向キー下
-        if (point1 == 0 && Input.GetKeyDown(KeyCode.DownArrow))
+    // ボタンが押された場合、今回呼び出される関数
+    public void OnClick(int nunber_)
+    {
+        switch (nunber_)
         {
-            point1 = 1;
-
+            case 0:
+                SceneManager.LoadScene("select");
+                break;
+            case 1:
+                SceneManager.LoadScene("option");
+                break;
+            case 2:
+                SceneManager.LoadScene("gallery");
+                break;
+            case 3:
+                SceneManager.LoadScene("title");
+                break;
+            default:
+                break;
         }
-        if (point1 == 1 && Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            point1 = 2;
-
-        }
-        if (point1 == 2 && Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            point1 = 3;
-
-        }
-        if (point1 == 3 && Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            point1 = 0;
-
-        }
-
-        //方向キー上
-        if (point1 == 0 && Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            point1 = 3;
-
-        }
-        if (point1 == 1 && Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            point1 = 0;
-
-        }
-        if (point1 == 2 && Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            point1 = 1;
-
-        }
-        if (point1 == 3 && Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            point1 = 2;
-
-        }
-
-        //方向キー左右
-        if (point1 <= 2  && Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            point1 = 3;
-
-        }
-        if (point1 == 3 && Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            point1 = 0;
-
-        }//シーン移動(一時的に３と０の結果を入れ替える)
-        if (point1 == 3 && Input.GetKeyDown(KeyCode.Space))
-        {
-            SceneManager.LoadScene("nurturing");
-        }
-        if (point1 == 1 && Input.GetKeyDown(KeyCode.Space))
-        {
-            SceneManager.LoadScene("off-line");
-        }
-        if (point1 == 2 && Input.GetKeyDown(KeyCode.Space))
-        {
-            SceneManager.LoadScene("on-line");
-        }
-        if (point1 == 0 && Input.GetKeyDown(KeyCode.Space))
-        {
-            SceneManager.LoadScene("title");
-        }
-
-        //if (point1 == 0 && )
-        {
-
-        }
-        //if (point1 == 1 && )
-        {
-
-        }
-        //if (point1 == 2 && )
-        {
-
-        }
-        //if (point1 == 3 && )
-        {
-
-        }
-
-
     }
 }
