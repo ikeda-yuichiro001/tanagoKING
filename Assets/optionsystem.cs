@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEditor;
 using UnityEngine.SceneManagement;
 
-public class selectsystem : MonoBehaviour
+public class optionsystem : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -30,16 +30,24 @@ public class selectsystem : MonoBehaviour
         switch (nunber_)
         {
             case 0:
-                SceneManager.LoadScene("ikusei");
+
+                //SceneManager.LoadScene("select");
+
                 break;
             case 1:
-                SceneManager.LoadScene("off-line");
+
+                //SceneManager.LoadScene("option");
+
                 break;
             case 2:
-                SceneManager.LoadScene("on-line");
+
+                //SceneManager.LoadScene("gallery");
+
                 break;
             case 3:
+
                 SceneManager.LoadScene("title");
+
                 break;
             default:
                 break;
