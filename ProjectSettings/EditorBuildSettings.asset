@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/option.unity
     guid: 70cba9d0c09ddd2448078ec6cdc15470
+  - enabled: 1
+    path: Assets/logo.unity
+    guid: 8cff42172d1d53e49afd02e3a8ce3c62
   m_configObjects: {}
