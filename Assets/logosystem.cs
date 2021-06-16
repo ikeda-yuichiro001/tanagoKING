@@ -24,7 +24,7 @@ public class logosystem : MonoBehaviour
     void Update()
     {
         //GetComponent<Image>().color = new Color(red, green, blue, alfa);
-        //alfa += speed;
+        alfa += speed;
     }
     void ChangeScene()
     {
