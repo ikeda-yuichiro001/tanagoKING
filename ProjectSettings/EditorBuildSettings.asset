@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/logo.unity
     guid: 8cff42172d1d53e49afd02e3a8ce3c62
+  - enabled: 1
+    path: Assets/off-line.unity
+    guid: db5089c33daa5fc42951c9a10841201f
+  - enabled: 1
+    path: Assets/endroll.unity
+    guid: 938e0c5aca114dc4e8487d090b2c170b
   m_configObjects: {}

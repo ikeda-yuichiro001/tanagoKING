@@ -6,15 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class optionsystem : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
 
     }
-
-
-
-    // Update is called once per frame
     void Update()
     {
 
@@ -23,31 +18,21 @@ public class optionsystem : MonoBehaviour
     {
         EditorApplication.Beep();
     }
-
-    // ボタンが押された場合、今回呼び出される関数
     public void OnClick(int nunber_)
     {
         switch (nunber_)
         {
             case 0:
-
-                //SceneManager.LoadScene("select");
-
+                //ひらがなに変えるプログラム
                 break;
             case 1:
-
-                //SceneManager.LoadScene("option");
-
+                //ふりがな付きに変えるプログラム
                 break;
             case 2:
-
-                //SceneManager.LoadScene("gallery");
-
+                //漢字オンリーに変えるプログラム
                 break;
             case 3:
-
                 SceneManager.LoadScene("title");
-
                 break;
             default:
                 break;

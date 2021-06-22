@@ -6,15 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class selectsystem : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
 
     }
-
-
-
-    // Update is called once per frame
     void Update()
     {
 
@@ -23,8 +18,6 @@ public class selectsystem : MonoBehaviour
     {
         EditorApplication.Beep();
     }
-
-    // ボタンが押された場合、今回呼び出される関数
     public void OnClick(int nunber_)
     {
         switch (nunber_)
