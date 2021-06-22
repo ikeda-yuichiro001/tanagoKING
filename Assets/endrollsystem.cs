@@ -17,7 +17,7 @@ public class endrollsystem : MonoBehaviour
     {
         this.transform.position += new Vector3(0, Time.deltaTime*speed, 0);
         tnp += Time.deltaTime;
-        if (tnp >= timer)
+        if (transform.position.y >= 1500)
         {
             SceneManager.LoadScene("logo");
         }
